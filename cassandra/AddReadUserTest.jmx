@@ -48,8 +48,8 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-    &quot;id&quot;: &quot;${counter}&quot;,&#xd;
-    &quot;createdBy&quot;: &quot;testuser${counter}&quot;,&#xd;
+    &quot;id&quot;: &quot;${random}&quot;,&#xd;
+    &quot;createdBy&quot;: &quot;testuser${random}&quot;,&#xd;
     &quot;createddate&quot;: &quot;2020-07-09 11:12:13:003+000&quot;,&#xd;
     &quot;currentlogintime&quot;: &quot;2020-07-09 11:12:13:003+000&quot;,&#xd;
     &quot;dob&quot;: &quot;1991-02-16&quot;,&#xd;
@@ -69,16 +69,16 @@
         &quot;English&quot;&#xd;
     ],&#xd;
     &quot;lastname&quot;: &quot;user&quot;,&#xd;
-    &quot;loginid&quot;: &quot;test_user${counter}&quot;,&#xd;
+    &quot;loginid&quot;: &quot;test_user${random}&quot;,&#xd;
     &quot;phone&quot;: &quot;1234567890&quot;,&#xd;
     &quot;profilevisibility&quot;: {&#xd;
         &quot;public&quot;: &quot;yes&quot;&#xd;
     },&#xd;
     &quot;status&quot;: 1,&#xd;
-    &quot;updatedby&quot;: &quot;${counter}&quot;,&#xd;
+    &quot;updatedby&quot;: &quot;${random}&quot;,&#xd;
     &quot;updateddate&quot;: &quot;2020-07-09 11:12:13:003+000&quot;,&#xd;
     &quot;userid&quot;: &quot;test${counter}&quot;,&#xd;
-    &quot;username&quot;: &quot;test_user${counter}&quot;,&#xd;
+    &quot;username&quot;: &quot;test_user${random}&quot;,&#xd;
     &quot;usertype&quot;: &quot;learner&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -205,6 +205,15 @@
           </objProp>
           <stringProp name="filename"></stringProp>
         </ResultCollector>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable" enabled="true">
+          <stringProp name="maximumValue">99999</stringProp>
+          <stringProp name="minimumValue">10000</stringProp>
+          <stringProp name="outputFormat">00000</stringProp>
+          <boolProp name="perThread">true</boolProp>
+          <stringProp name="randomSeed">10000</stringProp>
+          <stringProp name="variableName">random</stringProp>
+        </RandomVariableConfig>
         <hashTree/>
       </hashTree>
     </hashTree>
